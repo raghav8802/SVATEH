@@ -34,7 +34,7 @@ export function Footer() {
           </h3>
           <ul className="mt-4 space-y-2.5">
             {shopLinks.map((link) => (
-              <li key={link.href}>
+              <li key={link.label}>
                 <Link
                   href={link.href}
                   className="text-sm text-svate-mocha transition-colors hover:text-svate-gold"
@@ -52,7 +52,7 @@ export function Footer() {
           </h3>
           <ul className="mt-4 space-y-2.5">
             {collectionLinks.map((link) => (
-              <li key={link.href}>
+              <li key={link.label}>
                 <Link
                   href={link.href}
                   className="text-sm text-svate-mocha transition-colors hover:text-svate-gold"
@@ -70,7 +70,7 @@ export function Footer() {
           </h3>
           <ul className="mt-4 space-y-2.5">
             {helpLinks.map((link) => (
-              <li key={link.href}>
+              <li key={link.label}>
                 <Link
                   href={link.href}
                   className="text-sm text-svate-mocha transition-colors hover:text-svate-gold"
@@ -115,7 +115,7 @@ export function Footer() {
 
       <div className="border-t border-[#E9DDCF]/50 py-5 text-center">
         <p className="text-xs tracking-wide text-svate-taupe">
-          © {new Date().getFullYear()} SVATE. All rights reserved.
+          © 2026 SVATE. All rights reserved.
         </p>
       </div>
     </footer>

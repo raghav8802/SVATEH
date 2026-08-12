@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
+import { SiteShell } from "@/components/layout/SiteShell";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -27,7 +28,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${cormorant.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-surface font-sans text-neutral">
-        {children}
+        <SiteShell>{children}</SiteShell>
       </body>
     </html>
   );

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { AnnouncementBar, Header, Footer } from "@/components/home";
 import {
   AboutHero,
   OurStory,
@@ -15,16 +14,11 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="flex min-h-full flex-col bg-surface">
-      <AnnouncementBar />
-      <Header />
-      <main className="flex-1">
-        <AboutHero />
-        <OurStory />
-        <GuidingPrinciples />
-        <PhilosophyBanner />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <AboutHero />
+      <OurStory />
+      <GuidingPrinciples />
+      <PhilosophyBanner />
+    </>
   );
 }

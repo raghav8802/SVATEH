@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Heart, Search, ShoppingBag, Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -13,7 +12,7 @@ const navLinks = [
   { href: "/collections", label: "Collection" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
-];
+] as const;
 
 function isActivePath(pathname: string, href: string) {
   if (href === "/") return pathname === "/";
@@ -29,46 +28,45 @@ export function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 h-20 border-b border-[#E9DDCF]/30 bg-svate-ivory/80 backdrop-blur-md">
-        <div className="relative mx-auto flex h-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <div className="relative z-10 flex flex-1 items-center">
-            <Link
-              href="/"
-              className="relative flex h-12 w-12 shrink-0 items-center sm:h-14 sm:w-14"
-            >
-              <Image
-                src="/image-removebg-preview.png"
-                alt="SVATE"
-                fill
-                className="object-contain"
-                sizes="56px"
-                priority
-              />
-            </Link>
-          </div>
+      <header className="sticky top-0 z-50 border-b border-[#E9DDCF]/30 bg-svate-ivory/80 backdrop-blur-md">
+        <div className="mx-auto grid h-20 max-w-7xl grid-cols-[auto_1fr_auto] items-center gap-4 px-4 sm:px-6 lg:px-8">
+          <a
+            href="/"
+            className="relative block h-12 w-12 sm:h-14 sm:w-14"
+            aria-label="SVATE home"
+          >
+            <Image
+              src="/image-removebg-preview.png"
+              alt="SVATE"
+              fill
+              className="object-contain"
+              sizes="56px"
+              priority
+            />
+          </a>
 
           <nav
-            className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center gap-8 md:flex"
+            className="hidden items-center justify-center gap-6 md:flex lg:gap-8"
             aria-label="Primary"
           >
             {navLinks.map((link) => {
               const active = isActivePath(pathname, link.href);
               return (
-                <Link
+                <a
                   key={link.href}
                   href={link.href}
                   aria-current={active ? "page" : undefined}
-                  className={`text-sm font-medium tracking-wide transition-colors hover:text-svate-gold ${
+                  className={`relative z-[1] whitespace-nowrap px-1 py-2 text-sm font-medium tracking-wide transition-colors hover:text-svate-gold ${
                     active ? "text-svate-gold" : "text-svate-espresso/80"
                   }`}
                 >
                   {link.label}
-                </Link>
+                </a>
               );
             })}
           </nav>
 
-          <div className="relative z-10 flex flex-1 items-center justify-end gap-4 sm:gap-5">
+          <div className="flex items-center justify-end gap-4 sm:gap-5">
             <button
               type="button"
               className="md:hidden"
@@ -122,7 +120,7 @@ export function Header() {
                 const active = isActivePath(pathname, link.href);
                 return (
                   <li key={link.href}>
-                    <Link
+                    <a
                       href={link.href}
                       aria-current={active ? "page" : undefined}
                       className={`block py-2 text-sm font-medium tracking-wide ${
@@ -131,7 +129,7 @@ export function Header() {
                       onClick={() => setMobileOpen(false)}
                     >
                       {link.label}
-                    </Link>
+                    </a>
                   </li>
                 );
               })}

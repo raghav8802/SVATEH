@@ -2,18 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 export function HeroSection() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
       <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-12 lg:gap-16">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-          className="flex flex-col items-start"
-        >
+        <div className="flex flex-col items-start">
           <h1 className="font-serif text-4xl leading-tight tracking-tight text-svate-espresso sm:text-5xl lg:text-6xl">
             Pamper Yourself.
             <br />
@@ -28,23 +22,18 @@ export function HeroSection() {
           >
             Shop Now
           </Link>
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.98 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.15 }}
-          className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl shadow-luxury-lg"
-        >
+        <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl shadow-luxury-lg">
           <Image
-            src="https://images.unsplash.com/photo-1596704017254-9b121068ec31?q=80&w=1200&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=1200&auto=format&fit=crop"
             alt="SVATE beauty model portrait"
             fill
             priority
             className="object-cover object-top"
             sizes="(max-width: 768px) 100vw, 50vw"
           />
-        </motion.div>
+        </div>
       </div>
     </section>
   );

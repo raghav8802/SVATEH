@@ -1,10 +1,16 @@
-import { AnnouncementBar, Header, Footer } from "@/components/home";
+import type { Metadata } from "next";
 import {
   CollectionHero,
   FilterToolbar,
   ProductCard,
   BrandSpotlightCard,
 } from "@/components/collection";
+
+export const metadata: Metadata = {
+  title: "Collections | SVATE",
+  description:
+    "Effortless multi-use formulas designed for natural Indian skin tones.",
+};
 
 const products = [
   {
@@ -43,24 +49,18 @@ const products = [
 
 export default function CollectionsPage() {
   return (
-    <div className="flex min-h-full flex-col bg-surface">
-      <AnnouncementBar />
-      <Header />
-      <main className="flex-1">
-        <CollectionHero />
-        <FilterToolbar productCount={8} />
-
-        <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3 xl:grid-cols-4">
-            <ProductCard {...products[0]} />
-            <ProductCard {...products[1]} />
-            <BrandSpotlightCard />
-            <ProductCard {...products[2]} />
-            <ProductCard {...products[3]} />
-          </div>
-        </section>
-      </main>
-      <Footer />
-    </div>
+    <>
+      <CollectionHero />
+      <FilterToolbar productCount={8} />
+      <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3 xl:grid-cols-4">
+          <ProductCard {...products[0]} />
+          <ProductCard {...products[1]} />
+          <BrandSpotlightCard />
+          <ProductCard {...products[2]} />
+          <ProductCard {...products[3]} />
+        </div>
+      </section>
+    </>
   );
 }
