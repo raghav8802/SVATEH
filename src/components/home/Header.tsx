@@ -10,6 +10,7 @@ import { CartDrawer } from "@/components/cart/CartDrawer";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/collections", label: "Collection" },
+  { href: "/find-your-shade", label: "Find Shade" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ] as const;
@@ -28,25 +29,30 @@ export function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 border-b border-[#E9DDCF]/30 bg-svate-ivory/80 backdrop-blur-md">
-        <div className="mx-auto grid h-20 max-w-7xl grid-cols-[auto_1fr_auto] items-center gap-4 px-4 sm:px-6 lg:px-8">
+      <header className="sticky top-0 z-50 border-b border-[#E9DDCF]/30 bg-svateh-ivory/80 backdrop-blur-md">
+        <div className="mx-auto grid h-20 max-w-7xl grid-cols-[1fr_auto_1fr] items-center gap-3 px-4 sm:gap-4 sm:px-6 lg:px-8">
           <a
             href="/"
-            className="relative block h-12 w-12 sm:h-14 sm:w-14"
-            aria-label="SVATE home"
+            className="flex min-w-0 items-center gap-2.5 justify-self-start sm:gap-3"
+            aria-label="Svateh home"
           >
-            <Image
-              src="/image-removebg-preview.png"
-              alt="SVATE"
-              fill
-              className="object-contain"
-              sizes="56px"
-              priority
-            />
+            <span className="relative block h-12 w-12 shrink-0 sm:h-14 sm:w-14">
+              <Image
+                src="/image-removebg-preview.png"
+                alt=""
+                fill
+                className="object-contain"
+                sizes="56px"
+                priority
+              />
+            </span>
+            <span className="font-serif text-xl tracking-[0.14em] text-svateh-espresso sm:text-2xl">
+              Svateh
+            </span>
           </a>
 
           <nav
-            className="hidden items-center justify-center gap-6 md:flex lg:gap-8"
+            className="hidden items-center justify-center gap-4 justify-self-center md:flex lg:gap-7"
             aria-label="Primary"
           >
             {navLinks.map((link) => {
@@ -56,8 +62,8 @@ export function Header() {
                   key={link.href}
                   href={link.href}
                   aria-current={active ? "page" : undefined}
-                  className={`relative z-[1] whitespace-nowrap px-1 py-2 text-sm font-medium tracking-wide transition-colors hover:text-svate-gold ${
-                    active ? "text-svate-gold" : "text-svate-espresso/80"
+                  className={`relative z-[1] whitespace-nowrap px-1 py-2 text-sm font-medium tracking-wide transition-colors hover:text-svateh-gold ${
+                    active ? "text-svateh-gold" : "text-svateh-espresso/80"
                   }`}
                 >
                   {link.label}
@@ -66,7 +72,7 @@ export function Header() {
             })}
           </nav>
 
-          <div className="flex items-center justify-end gap-4 sm:gap-5">
+          <div className="flex items-center justify-end gap-4 justify-self-end sm:gap-5">
             <button
               type="button"
               className="md:hidden"
@@ -75,22 +81,22 @@ export function Header() {
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
             >
               {mobileOpen ? (
-                <X className="h-5 w-5 text-svate-espresso" strokeWidth={1.5} />
+                <X className="h-5 w-5 text-svateh-espresso" strokeWidth={1.5} />
               ) : (
-                <Menu className="h-5 w-5 text-svate-espresso" strokeWidth={1.5} />
+                <Menu className="h-5 w-5 text-svateh-espresso" strokeWidth={1.5} />
               )}
             </button>
             <button
               type="button"
               aria-label="Search"
-              className="text-svate-espresso/80 transition-colors hover:text-svate-gold"
+              className="text-svateh-espresso/80 transition-colors hover:text-svateh-gold"
             >
               <Search className="h-5 w-5" strokeWidth={1.5} />
             </button>
             <button
               type="button"
               aria-label="Wishlist"
-              className="text-svate-espresso/80 transition-colors hover:text-svate-gold"
+              className="text-svateh-espresso/80 transition-colors hover:text-svateh-gold"
             >
               <Heart className="h-5 w-5" strokeWidth={1.5} />
             </button>
@@ -98,11 +104,11 @@ export function Header() {
               type="button"
               aria-label={`Cart, ${itemCount} items`}
               onClick={openCart}
-              className="relative text-svate-espresso/80 transition-colors hover:text-svate-gold"
+              className="relative text-svateh-espresso/80 transition-colors hover:text-svateh-gold"
             >
               <ShoppingBag className="h-5 w-5" strokeWidth={1.5} />
               {itemCount > 0 && (
-                <span className="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-svate-gold text-[10px] font-medium text-white">
+                <span className="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-svateh-gold text-[10px] font-medium text-white">
                   {itemCount}
                 </span>
               )}
@@ -112,7 +118,7 @@ export function Header() {
 
         {mobileOpen && (
           <nav
-            className="border-t border-[#E9DDCF]/30 bg-svate-ivory px-4 py-4 md:hidden"
+            className="border-t border-[#E9DDCF]/30 bg-svateh-ivory px-4 py-4 md:hidden"
             aria-label="Mobile"
           >
             <ul className="flex flex-col items-center gap-3 text-center">
@@ -124,7 +130,7 @@ export function Header() {
                       href={link.href}
                       aria-current={active ? "page" : undefined}
                       className={`block py-2 text-sm font-medium tracking-wide ${
-                        active ? "text-svate-gold" : "text-svate-espresso"
+                        active ? "text-svateh-gold" : "text-svateh-espresso"
                       }`}
                       onClick={() => setMobileOpen(false)}
                     >

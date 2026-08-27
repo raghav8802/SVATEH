@@ -1,5 +1,3 @@
-"use client";
-
 import { AnnouncementBar } from "@/components/home/AnnouncementBar";
 import { Header } from "@/components/home/Header";
 import { Footer } from "@/components/home/Footer";

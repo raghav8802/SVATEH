@@ -1,17 +1,16 @@
 @import "tailwindcss";
-@config "../../tailwind.config.ts";
 
 @theme inline {
-  --color-svate-white: #ffffff;
-  --color-svate-ivory: #fff8f5;
-  --color-svate-beige: #e9ddcf;
-  --color-svate-gold: #c8a66a;
-  --color-svate-espresso: #4b3a2f;
-  --color-svate-sand: #dccbb8;
-  --color-svate-rose: #d9b6a3;
-  --color-svate-terracotta: #b9806f;
-  --color-svate-mocha: #8a6b5c;
-  --color-svate-taupe: #9c8c7a;
+  --color-svateh-white: #ffffff;
+  --color-svateh-ivory: #fff8f5;
+  --color-svateh-beige: #e9ddcf;
+  --color-svateh-gold: #c8a66a;
+  --color-svateh-espresso: #4b3a2f;
+  --color-svateh-sand: #dccbb8;
+  --color-svateh-rose: #d9b6a3;
+  --color-svateh-terracotta: #b9806f;
+  --color-svateh-mocha: #8a6b5c;
+  --color-svateh-taupe: #9c8c7a;
   --color-primary: #c8a66a;
   --color-secondary: #dccbb8;
   --color-neutral: #4b3a2f;
@@ -20,6 +19,8 @@
   --font-serif: var(--font-cormorant), "Cormorant Garamond", serif;
   --font-sans: var(--font-inter), Inter, sans-serif;
   --text-caption: 0.6875rem;
+  --text-caption--line-height: 1rem;
+  --text-caption--letter-spacing: 0.2em;
 }
 
 html {
@@ -64,4 +65,37 @@ body {
 
 .shadow-gold {
   box-shadow: 0 4px 20px rgba(200, 166, 106, 0.25);
+}
+
+.undertone-slider {
+  appearance: none;
+  height: 12px;
+  border-radius: 9999px;
+  background: linear-gradient(
+    to right,
+    #5b7cff 0%,
+    #8a6b9a 35%,
+    #c4a574 65%,
+    #e8c84a 100%
+  );
+  cursor: pointer;
+}
+
+.undertone-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 1px solid #e9ddcf;
+  box-shadow: 0 2px 10px rgba(75, 58, 47, 0.18);
+}
+
+.undertone-slider::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 1px solid #e9ddcf;
+  box-shadow: 0 2px 10px rgba(75, 58, 47, 0.18);
 }

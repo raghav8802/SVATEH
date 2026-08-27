@@ -6,7 +6,7 @@ const products = [
     name: "Dewy Skin Tint",
     price: "₹1,295",
     image:
-      "https://images.unsplash.com/photo-1631214524020-8e9c8248e1a8?q=80&w=600&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=600&auto=format&fit=crop",
   },
   {
     name: "Sculpting Multi-Stick",
@@ -32,12 +32,12 @@ export function CompleteYourLook() {
   return (
     <section className="mt-16 border-t border-[#E9DDCF]/50 pt-14 md:mt-20 md:pt-16">
       <div className="mb-8 flex items-end justify-between gap-4">
-        <h2 className="font-serif text-3xl text-svate-espresso">
+        <h2 className="font-serif text-3xl text-svateh-espresso">
           Complete Your Look
         </h2>
         <Link
           href="/collections"
-          className="shrink-0 text-xs font-semibold uppercase tracking-widest text-svate-gold transition-opacity hover:opacity-80 sm:text-sm"
+          className="shrink-0 text-xs font-semibold uppercase tracking-widest text-svateh-gold transition-opacity hover:opacity-80 sm:text-sm"
         >
           Shop All Face
         </Link>
@@ -50,7 +50,7 @@ export function CompleteYourLook() {
             href="/product"
             className="group flex flex-col"
           >
-            <div className="relative mb-4 aspect-[4/5] overflow-hidden rounded-2xl bg-svate-beige/40">
+            <div className="relative mb-4 aspect-[4/5] overflow-hidden rounded-2xl bg-svateh-beige/40">
               <Image
                 src={product.image}
                 alt={product.name}
@@ -59,10 +59,10 @@ export function CompleteYourLook() {
                 sizes="(max-width: 640px) 50vw, 25vw"
               />
             </div>
-            <h3 className="font-serif text-base text-svate-espresso sm:text-lg">
+            <h3 className="font-serif text-base text-svateh-espresso sm:text-lg">
               {product.name}
             </h3>
-            <p className="mt-1 text-sm text-svate-mocha">{product.price}</p>
+            <p className="mt-1 text-sm text-svateh-mocha">{product.price}</p>
           </Link>
         ))}
       </div>

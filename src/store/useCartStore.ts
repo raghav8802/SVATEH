@@ -44,7 +44,7 @@ export const useCartStore = create<CartState>((set, get) => ({
       price: 1295,
       quantity: 1,
       image:
-        "https://images.unsplash.com/photo-1631214524020-8e9c8248e1a8?q=80&w=400&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=400&auto=format&fit=crop",
     },
   ],
 

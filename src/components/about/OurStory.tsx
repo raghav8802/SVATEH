@@ -16,17 +16,17 @@ export function OurStory() {
         </div>
 
         <div>
-          <h2 className="mb-6 font-serif text-3xl tracking-wide text-svate-espresso lg:text-4xl">
+          <h2 className="mb-6 font-serif text-3xl tracking-wide text-svateh-espresso lg:text-4xl">
             OUR STORY
           </h2>
-          <div className="space-y-5 font-sans text-base leading-relaxed text-svate-mocha lg:text-lg">
+          <div className="space-y-5 font-sans text-base leading-relaxed text-svateh-mocha lg:text-lg">
             <p>
               Life moves fast. Deadlines. Meetings. Assignments. Family.
               Responsibilities. Women spend their entire day taking care of
               everyone else.
             </p>
             <p>
-              SVATE exists to remind every woman that she deserves a moment for
+              SVATEH exists to remind every woman that she deserves a moment for
               herself. One swipe. One blend. One minute. That&apos;s all it
               should take to feel beautiful.
             </p>

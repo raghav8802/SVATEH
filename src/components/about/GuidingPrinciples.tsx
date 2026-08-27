@@ -26,7 +26,7 @@ export function GuidingPrinciples() {
   return (
     <section className="bg-[#FAF7F5] py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="mb-12 text-center font-serif text-3xl text-svate-espresso lg:text-4xl">
+        <h2 className="mb-12 text-center font-serif text-3xl text-svateh-espresso lg:text-4xl">
           Our Guiding Principles
         </h2>
 
@@ -36,13 +36,13 @@ export function GuidingPrinciples() {
               key={title}
               className="rounded-2xl border border-[#E9DDCF]/30 bg-white p-8 text-center lg:p-10"
             >
-              <div className="mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-svate-gold/15">
-                <Icon className="h-6 w-6 text-svate-gold" strokeWidth={1.5} />
+              <div className="mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-svateh-gold/15">
+                <Icon className="h-6 w-6 text-svateh-gold" strokeWidth={1.5} />
               </div>
-              <h3 className="mb-4 font-serif text-xl tracking-wide text-svate-espresso uppercase">
+              <h3 className="mb-4 font-serif text-xl tracking-wide text-svateh-espresso uppercase">
                 {title}
               </h3>
-              <p className="font-sans text-sm leading-relaxed text-svate-mocha lg:text-base">
+              <p className="font-sans text-sm leading-relaxed text-svateh-mocha lg:text-base">
                 {copy}
               </p>
             </article>

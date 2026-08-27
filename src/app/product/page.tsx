@@ -8,7 +8,7 @@ import {
 } from "@/components/pdp";
 
 export const metadata: Metadata = {
-  title: "Lip & Cheek Tint | SVATE",
+  title: "Lip & Cheek Tint | SVATEH",
   description:
     "A lightweight, blendable tint that melts into your lips & cheeks for a natural flush that lasts all day.",
 };

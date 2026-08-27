@@ -37,7 +37,7 @@ const collections = [
 export function ShopByCollection() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-      <h2 className="mb-10 font-serif text-2xl tracking-widest text-svate-espresso sm:text-3xl">
+      <h2 className="mb-10 font-serif text-2xl tracking-widest text-svateh-espresso sm:text-3xl">
         SHOP BY COLLECTION
       </h2>
 
@@ -55,7 +55,7 @@ export function ShopByCollection() {
               className="object-cover transition-transform duration-500 group-hover:scale-105"
               sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-svate-espresso/70 via-svate-espresso/20 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-svateh-espresso/70 via-svateh-espresso/20 to-transparent" />
             <span className="absolute bottom-4 left-0 right-0 text-center font-serif text-xl tracking-wide text-white sm:text-2xl">
               {collection.name}
             </span>

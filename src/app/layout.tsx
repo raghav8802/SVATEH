@@ -17,7 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "SVATE | Effortless Luxury Beauty",
+  title: "SVATEH | Effortless Luxury Beauty",
   description: "Pamper Yourself. The World Can Wait.",
 };
 
@@ -27,7 +27,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${cormorant.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-surface font-sans text-neutral">
+      <body
+        className="flex min-h-full flex-col bg-surface font-sans text-neutral"
+        suppressHydrationWarning
+      >
         <SiteShell>{children}</SiteShell>
       </body>
     </html>

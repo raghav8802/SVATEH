@@ -11,9 +11,9 @@ export function BrandSpotlightCard() {
         className="object-cover"
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 66vw, 50vw"
       />
-      <div className="absolute inset-0 bg-svate-espresso/45" />
+      <div className="absolute inset-0 bg-svateh-espresso/45" />
       <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center text-white">
-        <Shield className="mb-4 h-8 w-8 text-svate-gold" strokeWidth={1.5} />
+        <Shield className="mb-4 h-8 w-8 text-svateh-gold" strokeWidth={1.5} />
         <h2 className="font-serif text-3xl font-medium leading-tight">
           Made for Real Indian Skin.
         </h2>

@@ -4,6 +4,7 @@ export { HeroSection } from "./HeroSection";
 export { BrandBadges } from "./BrandBadges";
 export { BestSellers } from "./BestSellers";
 export { ShopByCollection } from "./ShopByCollection";
-export { WhySvate } from "./WhySvate";
+export { WhySvateh } from "./WhySvateh";
+export { FindYourShadeBanner } from "./FindYourShadeBanner";
 export { CustomerReviews } from "./CustomerReviews";
 export { Footer } from "./Footer";

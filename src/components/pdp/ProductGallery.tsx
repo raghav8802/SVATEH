@@ -25,7 +25,7 @@ const galleryImages = [
     label: "Cheek application",
   },
   {
-    src: "https://images.unsplash.com/photo-1631214524020-8e9c8248e1a8?q=80&w=800&auto=format&fit=crop",
+    src: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=800&auto=format&fit=crop",
     alt: "Shade lineup",
     label: "Shade lineup",
   },
@@ -37,7 +37,7 @@ export function ProductGallery() {
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="relative aspect-square overflow-hidden rounded-2xl bg-svate-ivory">
+      <div className="relative aspect-square overflow-hidden rounded-2xl bg-svateh-ivory">
         <Image
           src={active.src}
           alt={active.alt}
@@ -61,7 +61,7 @@ export function ProductGallery() {
               onClick={() => setActiveIndex(index)}
               className={`relative aspect-square w-16 shrink-0 overflow-hidden rounded-xl sm:w-20 ${
                 isActive
-                  ? "ring-2 ring-[#C8A66A] ring-offset-2 ring-offset-svate-ivory"
+                  ? "ring-2 ring-[#C8A66A] ring-offset-2 ring-offset-svateh-ivory"
                   : "ring-1 ring-[#E9DDCF]"
               }`}
             >

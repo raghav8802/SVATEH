@@ -18,18 +18,19 @@ const collectionLinks = [
 ];
 
 const helpLinks = [
+  { href: "/find-your-shade", label: "Find Your Shade" },
   { href: "/contact", label: "Contact Us" },
-  { href: "/contact", label: "Shipping & Returns" },
-  { href: "/contact", label: "FAQs" },
+  { href: "/shipping-returns", label: "Shipping & Returns" },
+  { href: "/faq", label: "FAQs" },
   { href: "/about", label: "Our Story" },
 ];
 
 export function Footer() {
   return (
-    <footer className="border-t border-[#E9DDCF]/50 bg-svate-beige/40">
+    <footer className="border-t border-[#E9DDCF]/50 bg-svateh-beige/40">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 py-14 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:gap-8 lg:px-8">
         <div>
-          <h3 className="font-serif text-lg tracking-wide text-svate-espresso">
+          <h3 className="font-serif text-lg tracking-wide text-svateh-espresso">
             Shop
           </h3>
           <ul className="mt-4 space-y-2.5">
@@ -37,7 +38,7 @@ export function Footer() {
               <li key={link.label}>
                 <Link
                   href={link.href}
-                  className="text-sm text-svate-mocha transition-colors hover:text-svate-gold"
+                  className="text-sm text-svateh-mocha transition-colors hover:text-svateh-gold"
                 >
                   {link.label}
                 </Link>
@@ -47,7 +48,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="font-serif text-lg tracking-wide text-svate-espresso">
+          <h3 className="font-serif text-lg tracking-wide text-svateh-espresso">
             Collections
           </h3>
           <ul className="mt-4 space-y-2.5">
@@ -55,7 +56,7 @@ export function Footer() {
               <li key={link.label}>
                 <Link
                   href={link.href}
-                  className="text-sm text-svate-mocha transition-colors hover:text-svate-gold"
+                  className="text-sm text-svateh-mocha transition-colors hover:text-svateh-gold"
                 >
                   {link.label}
                 </Link>
@@ -65,7 +66,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="font-serif text-lg tracking-wide text-svate-espresso">
+          <h3 className="font-serif text-lg tracking-wide text-svateh-espresso">
             Help
           </h3>
           <ul className="mt-4 space-y-2.5">
@@ -73,7 +74,7 @@ export function Footer() {
               <li key={link.label}>
                 <Link
                   href={link.href}
-                  className="text-sm text-svate-mocha transition-colors hover:text-svate-gold"
+                  className="text-sm text-svateh-mocha transition-colors hover:text-svateh-gold"
                 >
                   {link.label}
                 </Link>
@@ -83,10 +84,10 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="font-serif text-lg tracking-wide text-svate-espresso">
-            Join SVATE
+          <h3 className="font-serif text-lg tracking-wide text-svateh-espresso">
+            Join SVATEH
           </h3>
-          <p className="mt-4 text-sm leading-relaxed text-svate-mocha">
+          <p className="mt-4 text-sm leading-relaxed text-svateh-mocha">
             Soft launches, shade drops, and early access — straight to your inbox.
           </p>
           <form
@@ -101,7 +102,7 @@ export function Footer() {
               type="email"
               required
               placeholder="Your email"
-              className="min-w-0 flex-1 rounded-full border border-[#E9DDCF] bg-white px-4 py-2.5 text-sm text-svate-espresso placeholder:text-svate-taupe focus:border-svate-gold focus:outline-none focus:ring-1 focus:ring-svate-gold"
+              className="min-w-0 flex-1 rounded-full border border-[#E9DDCF] bg-white px-4 py-2.5 text-sm text-svateh-espresso placeholder:text-svateh-taupe focus:border-svateh-gold focus:outline-none focus:ring-1 focus:ring-svateh-gold"
             />
             <button
               type="submit"
@@ -114,8 +115,8 @@ export function Footer() {
       </div>
 
       <div className="border-t border-[#E9DDCF]/50 py-5 text-center">
-        <p className="text-xs tracking-wide text-svate-taupe">
-          © 2026 SVATE. All rights reserved.
+        <p className="text-xs tracking-wide text-svateh-taupe">
+          © 2026 SVATEH. All rights reserved.
         </p>
       </div>
     </footer>

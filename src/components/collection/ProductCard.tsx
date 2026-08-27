@@ -26,7 +26,7 @@ export function ProductCard({
 
   return (
     <article className="group flex h-full flex-col">
-      <div className="relative mb-4 aspect-[4/5] overflow-hidden rounded-2xl bg-svate-beige/40">
+      <div className="relative mb-4 aspect-[4/5] overflow-hidden rounded-2xl bg-svateh-beige/40">
         <Link href={href} className="absolute inset-0 block">
           <Image
             src={image}
@@ -40,10 +40,10 @@ export function ProductCard({
           type="button"
           aria-label={wishlisted ? "Remove from wishlist" : "Add to wishlist"}
           onClick={() => setWishlisted((w) => !w)}
-          className="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-svate-espresso shadow-sm backdrop-blur-sm transition-colors hover:text-svate-gold"
+          className="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-svateh-espresso shadow-sm backdrop-blur-sm transition-colors hover:text-svateh-gold"
         >
           <Heart
-            className={`h-4 w-4 ${wishlisted ? "fill-svate-gold text-svate-gold" : ""}`}
+            className={`h-4 w-4 ${wishlisted ? "fill-svateh-gold text-svateh-gold" : ""}`}
             strokeWidth={1.5}
           />
         </button>
@@ -52,14 +52,14 @@ export function ProductCard({
       <div className="flex flex-1 flex-col">
         <div className="flex items-baseline justify-between gap-3">
           <Link href={href}>
-            <h3 className="font-serif text-lg text-svate-espresso sm:text-xl">
+            <h3 className="font-serif text-lg text-svateh-espresso sm:text-xl">
               {name}
             </h3>
           </Link>
-          <p className="shrink-0 text-sm font-medium text-svate-espresso">{price}</p>
+          <p className="shrink-0 text-sm font-medium text-svateh-espresso">{price}</p>
         </div>
 
-        <p className="mt-1.5 text-sm text-svate-gold" aria-label={`Rated ${rating} out of 5`}>
+        <p className="mt-1.5 text-sm text-svateh-gold" aria-label={`Rated ${rating} out of 5`}>
           ★ {rating.toFixed(1)}
         </p>
 

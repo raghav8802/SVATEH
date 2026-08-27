@@ -7,7 +7,7 @@ import {
 } from "@/components/collection";
 
 export const metadata: Metadata = {
-  title: "Collections | SVATE",
+  title: "Collections | SVATEH",
   description:
     "Effortless multi-use formulas designed for natural Indian skin tones.",
 };
@@ -34,7 +34,7 @@ const products = [
     price: "₹895",
     rating: 4.9,
     image:
-      "https://images.unsplash.com/photo-1631214524020-8e9c8248e1a8?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=800&auto=format&fit=crop",
     shades: ["#F2C4C4", "#E8A0A0", "#D47B8C", "#C45C6A"],
   },
   {

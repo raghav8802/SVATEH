@@ -1,38 +1,51 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
+
+const HERO_VIDEO =
+  "/Eyelash serum Videography _ B roll _ Creative Cosmetics Video.mp4";
 
 export function HeroSection() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
       <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-12 lg:gap-16">
         <div className="flex flex-col items-start">
-          <h1 className="font-serif text-4xl leading-tight tracking-tight text-svate-espresso sm:text-5xl lg:text-6xl">
+          <h1 className="font-serif text-4xl leading-tight tracking-tight text-svateh-espresso sm:text-5xl lg:text-6xl">
             Pamper Yourself.
             <br />
             The World Can Wait.
           </h1>
-          <p className="mt-5 max-w-md text-base text-svate-mocha sm:text-lg">
+          <p className="mt-5 max-w-md text-base text-svateh-mocha sm:text-lg">
             Minimal steps. Maximum you.
           </p>
-          <Link
-            href="/collections"
-            className="mt-8 inline-flex items-center justify-center rounded-full bg-[#C8A66A] px-8 py-3.5 text-sm font-semibold uppercase tracking-widest text-white shadow-gold transition-opacity hover:opacity-90"
-          >
-            Shop Now
-          </Link>
+          <div className="mt-8 flex flex-wrap items-center gap-3">
+            <Link
+              href="/collections"
+              className="inline-flex items-center justify-center rounded-full bg-[#C8A66A] px-8 py-3.5 text-sm font-semibold uppercase tracking-widest text-white shadow-gold transition-opacity hover:opacity-90"
+            >
+              Shop Now
+            </Link>
+            <Link
+              href="/find-your-shade"
+              className="inline-flex items-center justify-center rounded-full border border-svateh-espresso px-8 py-3.5 text-sm font-semibold uppercase tracking-widest text-svateh-espresso transition-colors hover:bg-svateh-espresso hover:text-svateh-ivory"
+            >
+              Find Your Shade
+            </Link>
+          </div>
         </div>
 
-        <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl shadow-luxury-lg">
-          <Image
-            src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=1200&auto=format&fit=crop"
-            alt="SVATE beauty model portrait"
-            fill
-            priority
-            className="object-cover object-top"
-            sizes="(max-width: 768px) 100vw, 50vw"
-          />
+        <div className="relative aspect-square w-full overflow-hidden rounded-2xl shadow-luxury-lg">
+          <video
+            className="absolute inset-0 h-full w-full object-cover object-center"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            aria-label="SVATEH beauty film"
+          >
+            <source src={HERO_VIDEO} type="video/mp4" />
+          </video>
         </div>
       </div>
     </section>

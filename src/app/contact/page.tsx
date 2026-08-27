@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact | SVATE",
-  description: "Get in touch with SVATE. We'd love to hear from you.",
+  title: "Contact | SVATEH",
+  description: "Get in touch with SVATEH. We'd love to hear from you.",
 };
 
 export default function ContactPage() {
@@ -11,10 +11,10 @@ export default function ContactPage() {
     <>
       <section className="bg-[#E9DDCF]">
         <div className="mx-auto max-w-7xl px-4 py-16 text-center sm:px-6 sm:py-20 lg:px-8">
-          <h1 className="font-serif text-4xl font-medium uppercase tracking-wide text-svate-espresso lg:text-6xl">
+          <h1 className="font-serif text-4xl font-medium uppercase tracking-wide text-svateh-espresso lg:text-6xl">
             Contact Us
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl font-sans text-sm text-svate-espresso/80 md:text-base">
+          <p className="mx-auto mt-4 max-w-2xl font-sans text-sm text-svateh-espresso/80 md:text-base">
             Questions about shades, orders, or collaborations? We&apos;re here
             for you.
           </p>
@@ -23,50 +23,50 @@ export default function ContactPage() {
 
       <section className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:py-20">
         <div>
-          <h2 className="font-serif text-3xl text-svate-espresso">
+          <h2 className="font-serif text-3xl text-svateh-espresso">
             Get in Touch
           </h2>
-          <p className="mt-4 text-sm leading-relaxed text-svate-mocha md:text-base">
+          <p className="mt-4 text-sm leading-relaxed text-svateh-mocha md:text-base">
             Reach out and our team will get back to you within 1–2 business
             days. Pamper yourself — the world can wait.
           </p>
 
           <ul className="mt-10 space-y-6">
             <li className="flex items-start gap-3">
-              <Mail className="mt-0.5 h-5 w-5 shrink-0 text-svate-gold" strokeWidth={1.5} />
+              <Mail className="mt-0.5 h-5 w-5 shrink-0 text-svateh-gold" strokeWidth={1.5} />
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wider text-svate-espresso">
+                <p className="text-xs font-semibold uppercase tracking-wider text-svateh-espresso">
                   Email
                 </p>
                 <a
-                  href="mailto:hello@svate.in"
-                  className="mt-1 text-sm text-svate-mocha transition-colors hover:text-svate-gold"
+                  href="mailto:hello@svateh.in"
+                  className="mt-1 text-sm text-svateh-mocha transition-colors hover:text-svateh-gold"
                 >
-                  hello@svate.in
+                  hello@svateh.in
                 </a>
               </div>
             </li>
             <li className="flex items-start gap-3">
-              <Phone className="mt-0.5 h-5 w-5 shrink-0 text-svate-gold" strokeWidth={1.5} />
+              <Phone className="mt-0.5 h-5 w-5 shrink-0 text-svateh-gold" strokeWidth={1.5} />
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wider text-svate-espresso">
+                <p className="text-xs font-semibold uppercase tracking-wider text-svateh-espresso">
                   Phone
                 </p>
                 <a
                   href="tel:+919876543210"
-                  className="mt-1 text-sm text-svate-mocha transition-colors hover:text-svate-gold"
+                  className="mt-1 text-sm text-svateh-mocha transition-colors hover:text-svateh-gold"
                 >
                   +91 98765 43210
                 </a>
               </div>
             </li>
             <li className="flex items-start gap-3">
-              <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-svate-gold" strokeWidth={1.5} />
+              <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-svateh-gold" strokeWidth={1.5} />
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wider text-svate-espresso">
+                <p className="text-xs font-semibold uppercase tracking-wider text-svateh-espresso">
                   Studio
                 </p>
-                <p className="mt-1 text-sm text-svate-mocha">Mumbai, India</p>
+                <p className="mt-1 text-sm text-svateh-mocha">Mumbai, India</p>
               </div>
             </li>
           </ul>
@@ -76,7 +76,7 @@ export default function ContactPage() {
           <div>
             <label
               htmlFor="name"
-              className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-svate-espresso"
+              className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-svateh-espresso"
             >
               Name
             </label>
@@ -85,14 +85,14 @@ export default function ContactPage() {
               name="name"
               type="text"
               required
-              className="w-full rounded-xl border border-[#E9DDCF] bg-svate-ivory px-4 py-3 text-sm text-svate-espresso placeholder:text-svate-taupe focus:border-svate-gold focus:outline-none focus:ring-1 focus:ring-svate-gold"
+              className="w-full rounded-xl border border-[#E9DDCF] bg-svateh-ivory px-4 py-3 text-sm text-svateh-espresso placeholder:text-svateh-taupe focus:border-svateh-gold focus:outline-none focus:ring-1 focus:ring-svateh-gold"
               placeholder="Your name"
             />
           </div>
           <div>
             <label
               htmlFor="email"
-              className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-svate-espresso"
+              className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-svateh-espresso"
             >
               Email
             </label>
@@ -101,14 +101,14 @@ export default function ContactPage() {
               name="email"
               type="email"
               required
-              className="w-full rounded-xl border border-[#E9DDCF] bg-svate-ivory px-4 py-3 text-sm text-svate-espresso placeholder:text-svate-taupe focus:border-svate-gold focus:outline-none focus:ring-1 focus:ring-svate-gold"
+              className="w-full rounded-xl border border-[#E9DDCF] bg-svateh-ivory px-4 py-3 text-sm text-svateh-espresso placeholder:text-svateh-taupe focus:border-svateh-gold focus:outline-none focus:ring-1 focus:ring-svateh-gold"
               placeholder="you@email.com"
             />
           </div>
           <div>
             <label
               htmlFor="message"
-              className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-svate-espresso"
+              className="mb-1.5 block text-xs font-semibold uppercase tracking-wider text-svateh-espresso"
             >
               Message
             </label>
@@ -117,7 +117,7 @@ export default function ContactPage() {
               name="message"
               required
               rows={5}
-              className="w-full resize-y rounded-xl border border-[#E9DDCF] bg-svate-ivory px-4 py-3 text-sm text-svate-espresso placeholder:text-svate-taupe focus:border-svate-gold focus:outline-none focus:ring-1 focus:ring-svate-gold"
+              className="w-full resize-y rounded-xl border border-[#E9DDCF] bg-svateh-ivory px-4 py-3 text-sm text-svateh-espresso placeholder:text-svateh-taupe focus:border-svateh-gold focus:outline-none focus:ring-1 focus:ring-svateh-gold"
               placeholder="How can we help?"
             />
           </div>

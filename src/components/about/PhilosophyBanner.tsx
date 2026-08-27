@@ -14,7 +14,7 @@ export function PhilosophyBanner() {
       <div className="absolute inset-0 bg-[#F8F6F2]/88" aria-hidden="true" />
 
       <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-        <blockquote className="mx-auto mb-8 max-w-4xl font-serif text-2xl font-medium leading-relaxed text-svate-espresso md:text-4xl">
+        <blockquote className="mx-auto mb-8 max-w-4xl font-serif text-2xl font-medium leading-relaxed text-svateh-espresso md:text-4xl">
           &ldquo;We create products that replace multiple makeup steps with
           smart, high-performance formulas designed for real Indian skin and
           lifestyles.&rdquo;

@@ -23,14 +23,14 @@ export function FilterToolbar({ productCount = 8 }: { productCount?: number }) {
                 onClick={() =>
                   setOpenFilter((current) => (current === filter ? null : filter))
                 }
-                className="inline-flex items-center gap-1.5 rounded-full border border-[#E9DDCF] bg-white px-4 py-2 text-xs font-medium tracking-wide text-svate-espresso transition-colors hover:border-svate-gold sm:text-sm"
+                className="inline-flex items-center gap-1.5 rounded-full border border-[#E9DDCF] bg-white px-4 py-2 text-xs font-medium tracking-wide text-svateh-espresso transition-colors hover:border-svateh-gold sm:text-sm"
               >
                 {filter}
                 <ChevronDown className="h-3.5 w-3.5 opacity-60" strokeWidth={1.5} />
               </button>
               {openFilter === filter && (
                 <div className="absolute left-0 top-full z-50 mt-2 min-w-[140px] rounded-xl border border-[#E9DDCF] bg-white p-2 shadow-luxury">
-                  <p className="px-2 py-1.5 text-xs text-svate-taupe">
+                  <p className="px-2 py-1.5 text-xs text-svateh-taupe">
                     All {filter.toLowerCase()}s
                   </p>
                 </div>
@@ -41,14 +41,14 @@ export function FilterToolbar({ productCount = 8 }: { productCount?: number }) {
 
         {/* Right: count + sort */}
         <div className="flex items-center justify-between gap-4 sm:justify-end">
-          <p className="text-xs text-svate-mocha sm:text-sm">
+          <p className="text-xs text-svateh-mocha sm:text-sm">
             Displaying {productCount} Products
           </p>
           <div className="relative">
             <button
               type="button"
               onClick={() => setSortOpen((o) => !o)}
-              className="inline-flex items-center gap-1.5 rounded-full border border-[#E9DDCF] bg-white px-4 py-2 text-xs font-medium tracking-wide text-svate-espresso transition-colors hover:border-svate-gold sm:text-sm"
+              className="inline-flex items-center gap-1.5 rounded-full border border-[#E9DDCF] bg-white px-4 py-2 text-xs font-medium tracking-wide text-svateh-espresso transition-colors hover:border-svateh-gold sm:text-sm"
             >
               Sort By
               <ChevronDown className="h-3.5 w-3.5 opacity-60" strokeWidth={1.5} />
@@ -63,10 +63,10 @@ export function FilterToolbar({ productCount = 8 }: { productCount?: number }) {
                       setSortBy(option);
                       setSortOpen(false);
                     }}
-                    className={`block w-full rounded-lg px-3 py-2 text-left text-sm transition-colors hover:bg-svate-beige/40 ${
+                    className={`block w-full rounded-lg px-3 py-2 text-left text-sm transition-colors hover:bg-svateh-beige/40 ${
                       sortBy === option
-                        ? "font-medium text-svate-gold"
-                        : "text-svate-espresso"
+                        ? "font-medium text-svateh-gold"
+                        : "text-svateh-espresso"
                     }`}
                   >
                     {option}

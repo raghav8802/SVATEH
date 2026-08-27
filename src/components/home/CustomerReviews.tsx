@@ -18,7 +18,7 @@ const reviews = [
   },
   {
     quote:
-      "Minimal steps, maximum glow — SVATE gets my morning routine down to five minutes.",
+      "Minimal steps, maximum glow — SVATEH gets my morning routine down to five minutes.",
     author: "Sana D.",
   },
 ];
@@ -40,7 +40,7 @@ function GoldStars() {
 export function CustomerReviews() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-      <h2 className="mb-10 text-center font-serif text-2xl tracking-widest text-svate-espresso sm:text-3xl">
+      <h2 className="mb-10 text-center font-serif text-2xl tracking-widest text-svateh-espresso sm:text-3xl">
         LOVED BY THOUSANDS
       </h2>
 
@@ -51,10 +51,10 @@ export function CustomerReviews() {
             className="flex flex-col rounded-2xl bg-white/60 p-6 shadow-luxury"
           >
             <GoldStars />
-            <p className="mt-4 flex-1 text-sm leading-relaxed text-svate-mocha">
+            <p className="mt-4 flex-1 text-sm leading-relaxed text-svateh-mocha">
               &ldquo;{review.quote}&rdquo;
             </p>
-            <footer className="mt-5 font-serif text-base text-svate-espresso">
+            <footer className="mt-5 font-serif text-base text-svateh-espresso">
               — {review.author}
             </footer>
           </blockquote>

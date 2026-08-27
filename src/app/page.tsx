@@ -3,7 +3,8 @@ import {
   BrandBadges,
   BestSellers,
   ShopByCollection,
-  WhySvate,
+  WhySvateh,
+  FindYourShadeBanner,
   CustomerReviews,
 } from "@/components/home";
 
@@ -13,8 +14,9 @@ export default function Home() {
       <HeroSection />
       <BrandBadges />
       <BestSellers />
+      <FindYourShadeBanner />
       <ShopByCollection />
-      <WhySvate />
+      <WhySvateh />
       <CustomerReviews />
     </>
   );
