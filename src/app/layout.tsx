@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Cormorant_Garamond, Inter, Noto_Serif_Devanagari } from "next/font/google";
 import { SiteShell } from "@/components/layout/SiteShell";
 import "./globals.css";
 
@@ -16,6 +16,13 @@ const inter = Inter({
   display: "swap",
 });
 
+const notoDevanagari = Noto_Serif_Devanagari({
+  variable: "--font-noto-devanagari",
+  subsets: ["devanagari"],
+  weight: ["600", "700", "800"],
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "SVATEH | Effortless Luxury Beauty",
   description: "Pamper Yourself. The World Can Wait.",
@@ -25,7 +32,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${cormorant.variable} ${inter.variable} h-full antialiased`}
+      className={`${cormorant.variable} ${inter.variable} ${notoDevanagari.variable} h-full antialiased`}
     >
       <body
         className="flex min-h-full flex-col bg-surface font-sans text-neutral"

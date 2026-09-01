@@ -13,7 +13,6 @@ const collectionLinks = [
   { href: "/collections", label: "Lips" },
   { href: "/collections", label: "Face" },
   { href: "/collections", label: "Eyes" },
-  { href: "/collections", label: "Skincare" },
   { href: "/collections", label: "Accessories" },
 ];
 

@@ -46,8 +46,8 @@ export function Header() {
                 priority
               />
             </span>
-            <span className="font-serif text-xl tracking-[0.14em] text-svateh-espresso sm:text-2xl">
-              Svateh
+            <span className="font-devanagari text-3xl font-extrabold leading-none tracking-tight text-svateh-espresso sm:text-4xl">
+              स्वतः
             </span>
           </a>
 

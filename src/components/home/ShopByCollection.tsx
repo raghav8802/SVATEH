@@ -21,12 +21,6 @@ const collections = [
     href: "/collections",
   },
   {
-    name: "Skincare",
-    image:
-      "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=800&auto=format&fit=crop",
-    href: "/collections",
-  },
-  {
     name: "Accessories",
     image:
       "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop",
@@ -41,7 +35,7 @@ export function ShopByCollection() {
         SHOP BY COLLECTION
       </h2>
 
-      <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-5 lg:gap-5">
+      <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4 lg:gap-5">
         {collections.map((collection) => (
           <Link
             key={collection.name}
