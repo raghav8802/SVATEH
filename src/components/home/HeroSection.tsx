@@ -8,14 +8,15 @@ const HERO_VIDEO =
 export function HeroSection() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+      <h1 className="mb-10 text-center font-serif text-4xl leading-tight tracking-tight text-svateh-espresso sm:mb-12 sm:text-5xl lg:mb-16 lg:text-6xl">
+        Pamper Yourself.
+        <br />
+        The World Can Wait.
+      </h1>
+
       <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-12 lg:gap-16">
         <div className="flex flex-col items-start">
-          <h1 className="font-serif text-4xl leading-tight tracking-tight text-svateh-espresso sm:text-5xl lg:text-6xl">
-            Pamper Yourself.
-            <br />
-            The World Can Wait.
-          </h1>
-          <p className="mt-5 max-w-md text-base text-svateh-mocha sm:text-lg">
+          <p className="max-w-md text-base text-svateh-mocha sm:text-lg">
             Minimal steps. Maximum you.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
