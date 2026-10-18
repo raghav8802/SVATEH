@@ -1,0 +1,15 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalEnv": [
+    "MONGODB_URI", "AUTH_SECRET", "NEXT_PUBLIC_SITE_URL",
+    "AWS_REGION", "AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY", "S3_BUCKET", "S3_PUBLIC_URL",
+    "RAZORPAY_KEY_ID", "RAZORPAY_KEY_SECRET", "RAZORPAY_WEBHOOK_SECRET",
+    "RESEND_API_KEY", "EMAIL_FROM", "STORE_NOTIFY_EMAIL", "CRON_SECRET"
+  ],
+  "tasks": {
+    "build": { "dependsOn": ["^build"], "outputs": [".next/**", "!.next/cache/**"] },
+    "dev": { "cache": false, "persistent": true },
+    "lint": {},
+    "typecheck": {}
+  }
+}
